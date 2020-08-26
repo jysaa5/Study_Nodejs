@@ -10,12 +10,28 @@ const port = 3000;
 // http.createServer으로 server 객체 생성
 // 서버가 다 생성되면 callback 함수로 화살표 다음의 명령어에 따라 동작 한다.
 // req: 요청 객체, res: 응답 객체
+// req: 요청에 대한 경로를 알고 있다. -> req.url: url 경로
 const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  // end: 응답을 이것으로 끝내겠다는 의미
-  // 문자열로 주면 응답 body에 포함되어서 응답이 된다.
-  res.end('Hello World!\n');
+  console.log('logging...')
+  console.log(req.url)
+
+  if(req.url ==='/'){
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    // end: 응답을 이것으로 끝내겠다는 의미
+    // 문자열로 주면 응답 body에 포함되어서 응답이 된다.
+    res.end('Hello World!\n');
+  }else if(req.url === '/users'){
+    // user 객체를 배열로 담는다.
+    const users = [{name: 'Alice'}, {name:'Beck'}]
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'application/json');
+    // end: 응답을 이것으로 끝내겠다는 의미
+    // 문자열로 주면 응답 body에 포함되어서 응답이 된다.
+    // end함수는 문자열로 응답을 해줘야 한다.
+    res.end(JSON.stringify(users));
+  }
+
 });
 
 // listen 함수: 서버를 요청 대기 상태로 만든다.
