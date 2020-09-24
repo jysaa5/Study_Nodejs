@@ -1,2 +1,2 @@
-# 1일 1커밋 (1 commit per day)
+# Study for Node.js & 1일 1코딩 1커밋
 
