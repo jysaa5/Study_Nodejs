@@ -4,5 +4,5 @@
 
 --------------------------
 ### Ajax
-+ [Axios (액시오스)](https://github.com/jysaa5/Violet_Study_Nodejs/blob/master/Ajax_20201028/AxiosEx.js)
-+ [Fetch (패치)](https://github.com/jysaa5/Violet_Study_Nodejs/blob/master/Ajax_20201028/FetchEx.js)
++ [Axios](https://github.com/jysaa5/Violet_Study_Nodejs/blob/master/Ajax_20201028/AxiosEx.js)
++ [Fetch](https://github.com/jysaa5/Violet_Study_Nodejs/blob/master/Ajax_20201028/FetchEx.js)
