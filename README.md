@@ -3,7 +3,9 @@
 
 ## :computer: Technology Stack
 
-+[fnm]
+## Node manager
++ [fnm](https://github.com/Schniz/fnm)
+
 ### Framework
 + [Express.js](https://expressjs.com/ko/)
 
