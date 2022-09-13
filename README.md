@@ -3,7 +3,7 @@
 
 ## :computer: Technology Stack
 
-## Node manager
+### Node manager
 + [fnm](https://github.com/Schniz/fnm)
 
 ### Framework
